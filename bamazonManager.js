@@ -25,7 +25,7 @@ function mngrMenu(){
     {
         type: "list",
         name: "mngrMenu",
-        message: "Please select a department",
+        message: "Please select a command",
         choices: [
             "View Products for Sale",
             "View Low Inventory",

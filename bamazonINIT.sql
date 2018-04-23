@@ -43,3 +43,8 @@ VALUES
 ("electronics", 20000),
 ("shoes", 16000),
 ("kitchen", 8000);
+
+SELECT products.department_id AS "Department ID", departments.department_name AS "Department Name", departments.over_head_costs AS "Over Head Costs",SUM(product_sales) AS "Total Sales", (SUM(product_sales) - over_head_costs) AS "Total Profits"
+FROM bamazonDB.products
+INNER JOIN bamazonDB.departments ON departments.department_id=products.department_id
+GROUP BY products.department_id;

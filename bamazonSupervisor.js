@@ -26,7 +26,7 @@ function sprMenu(){
     {
         type: "list",
         name: "sprMenu",
-        message: "Please select a department",
+        message: "Please select a command",
         choices: [
             "View Product Sales by Department",
             "Create New Department",
